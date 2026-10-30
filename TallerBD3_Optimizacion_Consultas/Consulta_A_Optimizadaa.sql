@@ -1,0 +1,10 @@
+SET STATISTICS IO ON;
+SET STATISTICS TIME ON;
+GO
+
+SELECT *
+FROM dbo.Ventas
+WHERE FechaVenta >= '20250301'
+  AND FechaVenta < '20250401'
+  AND Estado = 'P';
+GO

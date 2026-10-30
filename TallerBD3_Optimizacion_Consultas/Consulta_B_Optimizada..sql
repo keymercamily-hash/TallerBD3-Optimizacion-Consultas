@@ -1,0 +1,8 @@
+SET STATISTICS IO ON;
+SET STATISTICS TIME ON;
+GO
+
+SELECT VentaId, Monto, Estado
+FROM dbo.Ventas
+WHERE NumeroFactura = '0000123456';
+GO
